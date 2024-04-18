@@ -1,3 +1,7 @@
+//Jake Minneman
+//CIS 1202 801
+//April 17, 2024
+
 #include "Vehicle.h"
 #include "Car.h"
 #include "Truck.h"
@@ -7,6 +11,7 @@
 using namespace std;
 
 int main(void) {
+	//Vehicle test
 	string vManufacturer;
 	int vYear;
 	cout << "Enter manufacturer: ";
@@ -18,6 +23,7 @@ int main(void) {
 	vehicle.displayInfo();
 	cout << endl;
 
+	//Car test
 	string cManufacturer;
 	int cYear;
 	int cNumDoors;
@@ -33,11 +39,12 @@ int main(void) {
 	car.displayInfo();
 	cout << endl;
 
+	//Truck test
 	string tManufacturer;
 	int tYear;
 	int tTowingCapacity;
 	cout << "Enter manufacturer: ";
-	cin.ignore(); //To prevent a bug
+	cin.ignore();
 	getline(cin, tManufacturer);
 	cout << "Enter model year: ";
 	cin >> tYear;
