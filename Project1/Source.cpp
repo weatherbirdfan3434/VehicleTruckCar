@@ -22,6 +22,7 @@ int main(void) {
 	int cYear;
 	int cNumDoors;
 	cout << "Enter manufacturer: ";
+	cin.ignore(); //To prevent a bug
 	getline(cin, cManufacturer);
 	cout << "Enter model year: ";
 	cin >> cYear;
@@ -36,6 +37,7 @@ int main(void) {
 	int tYear;
 	int tTowingCapacity;
 	cout << "Enter manufacturer: ";
+	cin.ignore(); //To prevent a bug
 	getline(cin, tManufacturer);
 	cout << "Enter model year: ";
 	cin >> tYear;
